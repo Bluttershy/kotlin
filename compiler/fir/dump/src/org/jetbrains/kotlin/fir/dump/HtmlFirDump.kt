@@ -779,6 +779,10 @@ class HtmlFirDump internal constructor(private var linkResolver: FirLinkResolver
                 +value.toString()
                 keyword("L")
             }
+            FirConstKind.UnsignedLong -> {
+                +value.toString()
+                keyword("UL")
+            }
             FirConstKind.Float -> {
                 +value.toString()
                 keyword("F")
